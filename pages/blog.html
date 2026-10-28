@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosmos Blog</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        *{
+    font-family:  sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+    box-sizing: border-box;
+}
+
+/* root values */
+
+
+::selection{
+    color: #fff;
+    background-color:#4A5C6A;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 48px 0 32px;
+}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+a{
+    color: #fff;
+}
+
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+header.shadow{
+    background-color:#999;
+    box-shadow: 0 1px 4px #172317(0 4% 14% / 10%);
+    transition: .5s;
+}
+
+header.shadow .loko{
+    color: #172317;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.home{
+    width: 100%;
+    min-height: 400px;
+    background-color:#111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text{
+    color: #fff;
+    text-align: center;
+}
+
+.home-title{
+    font-size: 56px;
+}
+
+.home-subtitle{
+    font-size: 16px;
+    font-weight: 400;
+}
+/*first container*/
+.about{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .contentBx{
+    max-width: 50%;
+    width: 50%;
+    text-align: left;
+    padding-right: 40px;
+}
+.titleText{
+    font-weight: 600;
+    color: #111;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.title-text{
+    color: #111;
+    font-size:32px;
+}
+/*end container*/
+/*sec container*/
+.tech{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech .techBx{
+    max-width: 50%;
+    width: 50%;
+    text-align: left;
+    padding-right: 40px;
+}
+.titleText{
+    font-weight: 600;
+    color: #111;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.title-text{
+    color: #111;
+    font-size: 1em;
+}
+/*end container*/
+.btn2{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #fff;
+    border: .8px solid #111;
+    color: #333;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btn2:hover{
+    background-color: #4A5C6A;
+    border: none;
+    color: #fff;
+}
+.post-header{
+    width:100%;
+    height:500px;
+    background-color: #1a1e21;
+}
+.post-container{
+    max-width:800px;
+    margin:auto;
+    width: 100%;
+}
+.header-content{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top:64px;
+}
+.post-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: 32px;
+}
+
+.filter-item{
+    font-size: 14.4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.active-filter{
+    background: #4A5C6A;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.post{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    justify-content: center;
+    gap: 24px;
+}
+
+.post-box{
+    background:#fff;
+    box-shadow: 0 4px 14px hsl(35deg 25% 15% / 10%);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.post-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.category{
+    font-size: 14.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #4A5C6A;
+}
+
+.post-title{
+    font-size: 20.8px;
+    font-weight: 600;
+    color:  #172317;
+    display:flex;
+    overflow: hidden;
+}
+
+.post-date{
+    display: flex;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 4px;
+    font-weight: 400;
+}
+
+.post-description{
+    font-size: 14.4px;
+    line-height: 24px;
+    margin: 5px 0 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <!--nav--> <header>
+            <div class="actall">
+                <div class="all">
+                   
+                    <div class="logo">
+                        <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 30px ;font-size: 25;">K O S M O S</h4>
+                    </div>
+                    <nav class="second">
+                        <div class="menu">
+                            <ul> <!--this is a unorder list tag-->
+                           <li> <a href="../index.html">Home</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="research.html">Research</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="cart">
+                        <a href="login.html">
+                        <img src="../images/user.png" style="padding-inline: 10px;height: 40px">
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+                </div></header>
+        <div class="nav container">
+            <a href="#" class="loko">
+        </div>
+    </header>
+<section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">The Kosmos Blog</h2>
+            <span class="home-subtitle">Your source of great watch content</span>
+        </div>
+    </section>
+<!--first container-->
+    <section class="about container" id="about">
+        <div class="contentBx">
+            <h2 class="titleText">"Innovating Watches: Technology Meets Design and Sales"</h2>
+            <p class="title-text">
+            There have been various phases in the development of watches, each characterized by technological advancements. Innovation was used to meet. . .
+            </p>
+            <br>
+            <span class="post-date"><b>15 DEC 2023<b></b></span>
+            <a href="about.html" class="btn2">Read more</a>
+        </div>
+        <div class="imgBx">
+            <img src="../images/bg4.jpg" alt="" class="fitBg">
+        </div>
+    </section>
+    <!--sec container-->
+    <section class="tech container" id="tech">
+        <div class="techBx">
+            <h2 class="titleText">"Role of Technoloy on: Watch Design & Sales"</h2>
+            <p class="title-text">
+ Technology has played a vital roles on shaping both watch design & Sales.In terms of design and sales technolgy have improved the consumer experience but also in growth in both feild.
+ </p>
+            <br>
+            <span class="post-date"><b>25 Nov 2023</b></span>
+            <a href="tech.html" class="btn2">Read more</a>
+        </div>
+        <div class="imgBx">
+            <img src="../images/watch.jpg" alt="" class="fitBg">
+        </div>
+        <!--end-->
+    </section>
+    <div class="contentBx"></div>
+    <h4 class="titleText">Explore more blog</h4>
+    <div class="post-filter container">
+        <span class="filter-item" data-filter="Impact">Impact</span>
+        <span class="filter-item" data-filter="Trending">Trending</span>
+    </div>
+    
+    <div class="post container">
+        <!-- Post 1 -->
+        <div class="post-box Impact">
+            <img src="../images/watch5.jpg" alt="" class="post-img">
+            <h2 class="category">Impact</h2>
+            <a href="impact.html" class="post-title">The impact of technology on:<br>
+                Watch industry and consumer trends</a>
+            <span class="post-date">20 MAR 2024</span>
+        </div>
+        <!-- Post 2 -->
+        <div class="post-box Trending">
+            <img src="../images/watch3.jpg" alt="" class="post-img">
+            <h2 class="category">Trending</h2>
+            <a href="trending.html" class="post-title">Watches under SpotLight:<br>
+                Watches being trending for<br>Design & Consumer Satisfaction</a>
+            <span class="post-date">12 Feb 2024</span>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../JS/script.js"></script>
+        <footer>
+            <div class="bok">
+             <div class="cony">
+                <div class="brand">
+                    <img src="../images/first.png" class="ime">
+                    <p> Authorized Seller</p>
+                    <p>Kathmandu,Postalcode 4460</p>
+                    <p>tel:+977 9765417252</p>
+                
+                </div>
+                <div class="class">
+                    <h5> Explore</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                    </ul>
+                </div>
+                <div class="class">
+                    <h5> Brands Available</h5>
+                    <ul>
+                        <li><a href="gucci.html">Gucci</a></li>
+                        <li><a href="rolex.html">Rolex</a></li>
+                        <li><a href="rado.html">Rado</a></li>
+                        <li><a href="zrc.html">Zrc</a></li>
+                        <li><a href="Bvlgari.html">Bvlgari</a></li>
+                    </ul>
+                </div>
+                <div class="elef">
+                    <h3>
+                        Safe payments
+                    </h3>
+                  <div class="logo-payment">
+                    <div class="payment"><img src="../images/esewa.png" style="height:100px; width:100px;"></div>
+                        <div class="payment"><img src="../images/khalti.png"style="height: 60px; width:100px;padding-top:20px;"></div>
+                  </div>
+                    <h3> Follow us on</h3>
+                    <div class="loco">
+                        <div class="gar">   
+                               <a href="https://instagram.com/kos.mosoffical"><img src="../images/instagram.png" style="height: 30px;width:30px ">
+                        </a></div>
+                    <div class="gar">
+                        <a href="https://facebook.com/Sujan Rokaya (Ronaldo)"><img src="../images/facebook.png"style="height: 30px;width:30px; padding: bottom 30px;">
+                        </a></div>
+                      </div>
+                </div>
+            </div>
+                <div class="bottom">
+                    <p style="align-items: center">&copy; 2025 Kosmos.All right reserved.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+        <meta name="description" content="home-title"/>
+        <meta name="keywords" content="overview"/>
+ 
+        <link rel="stylesheet" href="CSS/style.css">
+        <style>
+            body{
+                background-color:rgba(41, 26, 104, 0.16);
+            }
+            /* for the slider at the top of the page*/
+            .slider{
+                height:700px;
+            }
+            .slider img{
+                width:100%;
+                height:100%;
+            }
+
+            .slider .wrapp{
+                width:100%; 
+                height:100%;
+                box-shadow:10px 10px 10px rgba(0,0,0.6);
+                overflow: hidden;
+            }
+                h3{
+                    text-align: center;
+                    font-size: 30px;
+                    margin:0;
+                    padding-top:10px ;
+                 }
+                p{
+                    text-align: center;
+                    padding-top: 20px;     
+                }
+                h6{
+                    font-size: 26px; ;
+                    text-align: center;
+                    padding-top: 20px;
+                }
+                .galar{
+                    display:flex;
+                    width:100%;
+                    margin:50px 0;
+                    align-items: center;
+                 }
+                 .but{
+                    width:200px;
+                    height:250px;
+                    text-align: center;
+                    margin:0 auto;
+                    display:block;
+                }
+                /*Buy Whatever*/
+                .bye h1{
+                    height:80px;
+                    text-align: center;
+                }
+                .bye {
+                    text-align: center;
+                    height: 250px;
+                    padding-top: 90px; 
+                    }
+
+
+                .bye p {
+                    text-align: center; 
+                    line-height: 2.0;
+                }
+
+                /* Adds space above the button */
+                .button-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px; 
+                }
+                /* explore button */
+                .exp-btn {
+                     width:100px;
+                    padding-right: 0px;
+                    border:3px black;
+                    outline:none;
+                    border-radius: 5px;
+                    height:50px;
+                    background-color:black;
+                    color:#515ea1; 
+                 } 
+                .exp-btn:hover{
+                background-color: rgba(54, 36, 111, 0.16);
+                 }
+
+                .exp-btn a {
+                text-decoration: none; /* removes underline from the link */
+                }
+                .exp-btn a:hover{
+                 background-color: rgba(41, 23, 99, 0.16);
+                }
+               .button-container{
+                display: flex;
+                justify-items: center;
+                margin-top: 20px;
+               }
+              /*for table*/      
+                .glss{
+                    padding-right:200px ;
+                    align-items: center;
+                    line-height: 2.0;
+                }
+                /*for the table part*/
+                .gems{
+                    padding-top: 30px;
+                    padding-bottom: 200px;
+                    width:100%;
+                    text-size-adjust: 24;
+                }
+                /*button of the table*/
+                .gem{
+                    width:100px;
+                    padding-right: 30px;
+                    border:3px black;
+                    outline:none;
+                    border-radius: 5px;
+                    height:50px;
+                    background-color:black;
+                    color: #515ea1; 
+                   
+        
+                }
+                .gem:hover{
+                    background-color: #f2f2f2;
+                }
+                /*for promises part*/
+                .gaf{
+                    width: 23%;
+                    height: 400px;
+                    margin:15px;
+                    box-sizing:border-box;
+                    text-align: center;
+                    border-radius:10px;
+                    cursor:pointer;
+                    padding-top: 10px;
+                    transition:.4s;
+                    background:transparent;
+                    justify-content: space-between;
+                }
+                /*button for contact us and locator*/
+                .floor{
+                    display:flex;
+                    justify-content:center ;
+                   align-items: center;
+                   margin-top: 20px;
+                }
+                .floor button{
+                    display: inline-block;
+                    text-decoration:none;
+                    padding-left: 20px;
+                }
+                /*for our promises*/
+                .promise{
+                    padding-top: 200px;
+                    width:100%;
+                    
+                }
+                .galar{
+                    padding-top: 50px 
+                }
+                .logo-payment{
+                    justify-content: space-around;
+                    display:flex;
+                    width:250px;
+                    height:100px;
+                   
+                }
+                .gar{
+                    padding-left: 45px;
+
+                    
+                }
+                /*for the diva the get to know us*/
+                .diva{
+                    width:100%;
+                    height:800px;
+                    background-image: url("images/back.jpg");
+                    background-position: center;
+                    background-size: cover;
+                    background-attachment: fixed;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align:center;
+                    position:relative;
+
+                }
+                .diva h1{
+                    font-size: 60px;
+                    color:darkkhaki;
+                    margin-bottom: 8px;
+                }
+                .diva-btw{
+                    font-size:17px;
+                    padding:16px;
+                    color:white;
+                    background-color:black;
+                    transition: .5 ease-in;
+                }
+                .diva-btw:hover{
+                    background-color: rgba(32, 6, 74, 0.35);
+                }
+                /* for the review of the customers*/
+                .last {
+                 width: 100%;
+                 margin: 50px auto;
+                 padding: 20px;
+                 text-align: center;
+                 padding-top: 50px;
+                 padding-bottom: 100px;
+                }
+                .last h2{
+                    margin-bottom: 20px;
+                    color:#444;
+                    font-size: 40px;
+                }
+                .last-container{
+                    display:flex;
+                    width:100%;
+                    justify-content: space-around;
+                }
+                .late {
+                    background:white;
+                    padding: 20px;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    padding: 20px;
+                    width:400px;
+                }
+                .late:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                }
+                .late p {
+                    font-size: 16px;
+                    color: #555;
+                    margin: 15px 0;
+                    line-height: 1.6;
+                    
+                }
+                .late h3 {
+                    font-size: 20px;
+                    margin: 0;
+                    color: #222;
+                
+                }
+                .late .title {
+                    font-size: 14px;
+                    color: #888;
+                }
+                /*for the new arrival,best seller,sale*/
+                .new{
+                    display:flex;
+                    flex:23.5%;
+                    width:100%;
+                    justify-content: space-around;
+                    overflow: hidden;
+                    padding-bottom: 60px;
+                }
+                .naya{
+                    width: 23%;
+                    height: 450px;
+                    margin:15px;
+                    box-sizing:border-box;
+                    text-align: center;
+                    border-radius:10px;
+                    cursor:pointer;
+                    padding-top: 40px;
+                    
+                }
+                .naya a{
+                    text-decoration: none;
+                }
+                /*for the blog*/
+                .news{
+                    display:flex;
+                    flex: 50;
+                    flex:50;
+                    width:100%;
+                    justify-content: space-between;
+                    padding-top: 400px;
+                    
+                }
+                .newp{
+                    overflow: hidden;
+                    margin-right: 20px;
+                }
+                .nep{
+                    margin-left: 30px;
+                    align-items: center;
+                    padding-top: 150px;
+                    overflow: hidden;
+                }
+                .newp p{
+                    font-size: 18px;
+                    color: #555;
+                    margin: 15px 0;
+                    line-height: 1.6;
+                }
+                /*for the button of the blog*/
+                .beti {
+                    display: flex;
+                    justify-content:left;
+                    margin-top: 20px; 
+                    padding-left: 20px;
+                        }
+                /*for the  button of the blog*/
+                .belt{
+                    width:100px;
+                    padding-right: 0px;
+                    border:3px black;
+                    outline:none;
+                    border-radius: 5px;
+                    height:50px;
+                    background-color:black;
+                    color:#515ea1; 
+                } 
+                .belt:hover{
+                    background-color: rgba(54, 36, 111, 0.16);
+                }   
+
+                .belt a {
+                    text-decoration: none; 
+                }
+                .belt a:hover{
+                     background-color: rgba(41, 23, 99, 0.16);
+                }
+        
+          </style>
+    </head>
+    <body>
+        <header>
+            <div class="actall">
+            <div class="all">
+               
+                <div class="logo">
+                    <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-bottom: 30px ;padding-top:20px;margin-left:35px;font-size: 20px;">K O S M O S</h4>
+                    
+                </div>
+                <nav class="second">
+                    <div class="menu">
+                        <ul> <!--this is a unorder list tag-->
+                       <li> <a href="index.html">Home</a></li>
+                        <li><a href="./pages/product.html">Products</a></li>
+                        <li><a href="./pages/blog.html">Blog</a></li>
+                        <li><a href="./pages/aboutus.html">About Us</a></li>
+                        <li><a href="./pages/research.html">Research</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="cart">
+                    <a href="./pages/login.html">
+                    <img src="./images/user.png" style="padding-inline: 10px;height: 40px">
+                    </a>
+                </div>
+                
+                
+            </div>
+            </div>
+            <!--Slider-->
+            <div class="slider">
+                <div class="wrapp">
+                        <div id="img">
+                   <img src="/images/ban.png">
+                        </div>
+                </div>
+    
+            </div>
+
+        </header>
+        <!--New arrival,Best seller,Sale-->
+        <div class="category">
+            <h1 style="text-align: center;padding-top: 90px;padding-bottom: 30px;"> Shop By Category</h1>
+            <div class="new">
+                
+                <div class="naya">
+                    <a href="./pages/newarrival.html">
+                    <img src="./images/display1.jpg" style="height: 340px; width:390px;">
+                    <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align:center;">NEW ARRIVALS </p>
+                    </a>
+                </div>
+                    <div class="naya">
+                        <a href="./pages/bestseller.html">
+                        <img src="./images/display2.jpg" style="height: 340px; width:390px;">
+                        <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align:center;">BEST SELLER </p>
+                        </a>
+                    </div>
+                        <div class="naya">
+                            <a href="./pages/Sale.html">
+                            <img src="./images/display3.jpg" style="height: 340px; width:390px;">
+                            <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align:center;">SALE </p>
+                            </a>
+                        </div>
+
+            </div>
+        </div>
+            <!--About us-->
+                <section class="diva">
+                    <div class="diva-sec">
+                        <div class="fyp">
+                            <h1>
+                                Get to know us more.
+                            </h1>
+                            <a href="pages/aboutus.html">
+                            <button class="diva-btw">Learn more</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!--Products-->
+                <div class="bye">
+                    <h1 style="text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Buy whatever your heart desires</h1>
+                    <p>
+                        At KOSMOS, we always value the provided trust and confidence when it comes to being one of the most affordable and transparent company in case of sales. We believe that items sold by us meet people's expectations and desires and fulfill their requirements.
+                        People mostly engage in the online shopping as it provides a lot of options and ease.Join thousands of happy customers who trust KOSMOS for their needs. Shop now and experience the difference!
+                    </p>
+                        <div class="button-container">
+                            <a href="pages/product.html">
+                             <button type="DISCOVER-MORE" class="exp-btn">
+                          Explore</button></a> </div>
+                    
+                 </div>
+                 <!--Blog-->
+                 <div class="news">
+                    <div class="newp">
+                        <img src="images/dall.webp" style="width: 900px;height: 500px;">
+                    </div>
+                    <div class="nep">
+                        <h1>
+                            Engage in recent trend and technologies
+                            <br> with our latest collection of news.
+                        </h1>
+                        <div class="beti">
+                            <a href="./pages/blog.html">
+                            <button class="belt">
+                                Learn more...
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Our promises-->
+                 <div class="promise">
+                    <div class="seren">
+                        <h1 style="text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Our promises</h1>
+                        <div class="galar">
+                            <div class="gaf">
+                                <img src="images/auth.webp" class="but" style="height:70px; width: 70px;">
+                                <h3>100% Authentic</h3>
+                                    <p>Our products are 100% genuine and sourced responsibly.</p>
+                             </div>
+                             <div class="gaf">
+                                <img src="images/cust.png" class="but" style="height:70px; width: 70px">
+                                <h3>Customer Satisfaction</h3>
+                                    <p> Your satisfaction is our no.1 priority</p>
+                             </div>
+                             <div class="gaf">
+                                <img src="images/transp.png" class="but" style="height:70px; width: 70px;">
+                                    <h3> Full Transparency</h3>
+                                    <p> We buy and sell all kinds of watches to promote fairness in the market.</p>
+                             </div>
+                             <div class="gaf">
+                                <img src="images/safe.png" class="but" style="height:70px; width: 70px;">
+                                    <h3>Safe Shopping</h3>
+                                    <p> We use the latest security measures to keep your information safe</p>
+                             </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!--Contact us, Location-->
+             <div class="gems">
+                 <div class="glss">
+                <table style="width: 100%;">
+                    <tr>
+                        <th><h1>
+                        Contact us
+                        </h1>
+                        </th>
+                        <th>
+                            <h1>
+                            Locator
+                            </h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>For further concerns and compaints please contact us.
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Visit us at your nearest location.
+                            </p>
+                        </td>
+                    </tr>
+                   <tr>
+                    <td>
+                        <div class="floor">
+                            <a href="pages/contactus.html">
+                        <button type="dicover-more" class="gem">Contact</button></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="floor">
+                            <a href="pages/location.html">
+                        <button type="discover-more" class="gem">Locator
+                        </button></a>
+                        </div>
+                        
+                    </td>
+                   </tr>
+                </table>
+                </div>
+            </div>
+             <!--the customers review-->
+                <section class="last">
+                  <h2 style="padding-bottom: 90px;">What Our Customers Are Saying</h2>
+                  <div class="last-container">
+                    <div class="late">
+                        <p>⭐⭐⭐⭐⭐</p>
+                      <p>"Amazing service!I couldn't be happier with the results. Highly recommended!"</p>
+                      <h3>Renuka Malla</h3>
+                      <span class="let">Software Engineer</span>
+                    </div>
+                    <div class="late">
+                        <p>⭐⭐⭐⭐</p>
+                      <p>"The attention to detail and professionalism were top-notch. Truly exceptional!"</p>
+                      <h3>Rhadha Sharma</h3>
+                      <span class="let">Entrepreneur</span>
+                    </div>
+                    <div class="late">
+                      <p >⭐⭐⭐⭐</p>
+                      <p>"They've been providing quality products, really loved it. Excellent support and quality!"</p>
+                      <h3>Nabin Karki</h3>
+                      <span class="let">Freelance Designer</span>
+                    </div>
+                  </div>
+                </section>
+                <footer>
+                <div class="bok">
+                 <div class="cony">
+                    <div class="brand">
+                        <img src="images/first.png" class="ime">
+                        <p> Authorized Seller</p>
+                        <p>Kathmandu,Postalcode 4460</p>
+                        <p>tel:+977 9765417252</p>
+                    
+                    </div>
+                    <div class="class">
+                        <h5> Explore</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/product.html">Products</a></li>
+                            <li><a href="pages/blog.html">Blog</a></li>
+                            <li><a href="pages/aboutus.html">About Us</a></li>
+                            <li><a href="pages/research.html">Research</a></li>
+                        </ul>
+                    </div>
+                    <div class="class">
+                        <h5> Brands Available</h5>
+                        <ul>
+                            <li><a href="pages/gucci.html">Gucci</a></li>
+                            <li><a href="pages/rolex.html">Rolex</a></li>
+                            <li><a href="pages/rado.html">Rado</a></li>
+                            <li><a href="pages/zrc.html">Zrc</a></li>
+                            <li><a href="pages/Bvlgari.html">Bvlgari</a></li>
+                        </ul>
+                    </div>
+                    <div class="elef">
+                        <h3>
+                            Safe payments
+                        </h3>
+                      <div class="logo-payment">
+                        <div class="payment"><img src="images/esewa.png" style="height:100px; width:100px;"></div>
+                            <div class="payment"><img src="images/khalti.png"style="height: 60px; width:100px;padding-top:20px;"></div>
+                      </div>
+                        <h3> Follow us on</h3>
+                        <div class="loco">
+                            <div class="gar">
+                                <a href="https://instagram.com/kos.mosoffical"><img src="images/instagram.png" style="height: 30px;width:30px ">
+                            </a></div>
+                            <div class="gar">
+                                <a href="https://facebook.com/Sujan Rokaya (Ronaldo)"><img src="images/facebook.png"style="height: 30px;width:30px; padding: bottom 30px;">
+                            </a></div>
+                          </div>
+                    </div>
+                </div>
+                    <div class="bottom">
+                        <p style="align-items: center">&copy; 2025 Kosmos.All right reserved.</p>
+                    </div>
+                </div>
+            </footer>
+    </body>
+    <script>
+        var images=['images/ban.png','images/ban1.png'];
+        
+        var x=0;
+        var imgs=document.getElementById('img');
+        setInterval(slider,3000);
+
+        function slider(){
+            if(x<images.length){
+                x=x+1;
+            }
+            else
+            {
+                x = 1;
+            }
+            imgs.innerHTML="<img src="+ images[x - 1]+">";
+        }
+
+    </script>
+</html>
